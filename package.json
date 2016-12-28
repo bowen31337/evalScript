@@ -44,7 +44,8 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
-    },
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bowen31337/evalScript.git"
