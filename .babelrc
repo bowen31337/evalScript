@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    ["transform-es2015-modules-umd", {
+      "globals": {
+        "evalScript": "evalScript"
+      },
+       "exactGlobals": true
+    }]
+  ],
+  "moduleId": "evalScript",
+  "presets": ["es2015","stage-0","stage-2"]
+}
