@@ -3,6 +3,7 @@
   "main": "lib/index.js",
   "author": "Bowen <supderdev@outlook.com.au>",
   "license": "MIT",
+  "version":"0.0.0-dev",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-loader": "^6.2.10",
