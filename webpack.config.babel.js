@@ -1,8 +1,8 @@
-import {join} from 'path'
+const webpackValidator = require('webpack-validator')
 
-const include = join(__dirname, 'src')
+const { join } = require('path')
 
-export default {
+module.exports  = () => webpackValidator( {
   entry: './src',
   output: {
     path: join(__dirname, 'lib'),
@@ -12,7 +12,7 @@ export default {
   devtool: 'source-map',
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'babel', include}
+      {test: /\.js$/, loader: 'babel', exclude: /node_modules/}
     ]
   }
-}
+})
