@@ -2,7 +2,7 @@ const webpackValidator = require('webpack-validator')
 
 const { join } = require('path')
 
-module.exports  = () => webpackValidator( {
+exports.default = () => webpackValidator( {
   entry: './src',
   output: {
     path: join(__dirname, 'lib'),
@@ -16,3 +16,4 @@ module.exports  = () => webpackValidator( {
     ]
   }
 })
+module.exports = exports['default']

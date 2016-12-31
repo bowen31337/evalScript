@@ -1,6 +1,5 @@
 // Karma configuration
 // Generated on Wed Dec 28 2016 10:43:53 GMT+0100 (CET)
-process.env.BABEL_ENV = 'test'
 
 const webpackConfig = require('./webpack.config.babel')()
 
